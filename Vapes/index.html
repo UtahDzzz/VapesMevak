@@ -1,0 +1,244 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VapesMevak</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- MODAL +18 -->
+<div class="age-overlay" id="ageOverlay">
+    <div class="age-box">
+    <h2>+18 AÑOS</h2>
+    <p>Este sitio es informativo y exclusivo para mayores de edad.</p>
+    <button onclick="acceptAge()">Soy mayor de 18</button>
+    </div>
+</div>
+
+<header>
+    <h1>VapesMevak</h1>
+    <p>Catálogo informativo · Atención por WhatsApp</p>
+    <a class="btn" href="https://wa.me/523340958088">Consultar por WhatsApp</a>
+</header>
+
+<main>
+    <h2>Modelos disponibles</h2>
+
+    <section class="grid">
+    <!-- Al hacer click en un producto se mostrará un modal con sabores -->
+    <!-- DUPLICA ESTE BLOQUE HASTA TENER 30 PRODUCTOS -->
+    <div class="card" onclick="openModal('IPLAY X-BOX PRO 15K','Kiwi Stramberey - Watermelo Stramberey - Grape Stramberey - Coco Stramberey - Watermelon Crush - Ice Caramel Macchiato - Cool Mint - Mamba - Mango Lichi - Pink Lemone - Tulum Mint - Perla Negra - Echale Limon A La Herida - Cherry Cranberry - Black Mint - Hija De La Guayaba')">
+    <img src="img/vape1.png" alt="Vape">
+    <h3>IPLAY X-BOX PRO 15K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('WAKA 15K','Ice Green Grape - Stramberey Banana - Peach Blue Raspberry - Mezcalina - Piña Colada - Stramberey Kiwi - Kiwi Dragon Berry - Watermelon Kiwi - Jamaica - Stramberey Burts - Stramberey Watermelon - Mojito Mint - Tepache Ice - Cool Mint - Stramberey Grape')">
+    <img src="img/vape2.png" alt="Vape">
+    <h3>WAKA 15K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('WAKA TITAN 30K','Tokio Mix - Cherry Soda - Ice Mojito - Peach Blue Raspberry - Ice Watermelon - Ice Banana Berry - California Wine - Guava Raspberry - Stramberey Kiwi - Ice Sour Blueberry Raspberry - Cool Mint - Fresh Mint')">
+    <img src="img/vape3.png" alt="Vape">
+    <h3>WAKA TITAN 30K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('WAKA BLAST 36K','Peach Mango Watermelon - Tulum Mint - Danonino - Pink Lemone - Stramberey Watermelon - White Grape - Stramberey Kiwi - Forrest Berries Stramberey - Refresher - Miami - Mint - Aqua Ice')">
+    <img src="img/vape4.png" alt="Vape">
+    <h3>WAKA BLAST 36K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('IPLAY BOX 4K','Double Apple - Dark Mint - Watermelon Bubble Gum - Perla Negra - Strawberry Mango - Cancún Breeze - Kiwi Strawberry - Mango Litchi - Watermelon Crush - Blueberry Cherry - Cool Mint - Pink Lemonade - Tulum Mint - Mamba - Coco Strawberry - Cherry Cranberry - Blackberry - Chaparrita De Uva - Strawberry Watermelon - Blueberry Mint - Sakura Grape')">
+    <img src="img/vape5.png" alt="Vape">
+    <h3>IPLAY BOX 4K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('LOST MARY 5K','Iced Peach Colada - Alphonso Mango - Ice Colombian Coffee - Ice Sour Cami Mint - Cherry Blossom Grape - Strawberry Kiwi Ice - Pineapple Apple Pear - Banana Raspberry - Ice Ginger Beer - Guava Ice')">
+    <img src="img/vape6.png" alt="Vape">
+    <h3>LOST MARY 5K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('SNOOPYSMOKE 15K','Strawberry Ice - Red Juice - Watermelon Ice - Strawberry Peach Mint - Pink Lemone - Grape Ice - Triple Berry - Tropical Rainbow - Cool Mint - Mexican Mango - Piña Colada')">
+    <img src="img/vape7.png" alt="Vape">
+    <h3>SNOOPYSMOKE 15K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('VEPATO 50K','Banana Breeze - Frosty Mint - Fresh Splash - Blue Razz - Grape Ice - Strawberry Blast - Ataulfo Mango - Triple Berry Blast - Rainbow Blast - Tropical Rainbow - Sour Messy Mix')">
+    <img src="img/vape8.png" alt="Vape">
+    <h3>VEPATO 50K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('VEPATO 35K','Black Cherry - Strawberry Mango - Strawberry Banana - Blueberry Watermelon - Blackberry Blueberry - Tropical Rainbow Blast - Juicy Peach Ice - Blue Cotton Candy - Pink Lemonade - Blue Razz Ice - Orange Sunrise - Watermelon Ice - Grape Pop - Miami Mint - Strawberry Kiwi - Sour Apple Ice')">
+    <img src="img/vape9.png" alt="Vape">
+    <h3>VEPATO 35K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('VAPATO 30K','Watermelon - Messy Fruits - Sour Apple - Strawberry Ice - Mint - Lichi Aloe - Mango Roll - Grape Ice - Peach Ice - Mint Fruits Strawberry')">
+    <img src="img/vape10.png" alt="Vape">
+    <h3>VAPATO 30K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('ELF BAR 6K','Clear - Autumn - Key West')">
+    <img src="img/vape11.png" alt="Vape">
+    <h3>ELF BAR 6K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('ELF BAR 5K','Tropical Rainbow - Pineapple Orange Mint - Blueberry Tobacco - Strawberry Tobacco')">
+    <img src="img/vape12.png" alt="Vape">
+    <h3>ELF BAR 5K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('ELF TANK 6K','Banana Ice - Rainbow Candy - Watermelon Breeze - Lemon Mint - Watermelon Bubblegum - Miami Mint - Ice Mint - Pacific Cooler - Jungle Breeze - Lemon Blast - Lush Mango - Virginia Tobacco - Nude - Blue Razz - Lychee Aloe')">
+    <img src="img/vape13.png" alt="Vape">
+    <h3>ELF TANK 6K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('FUNKI REPUBLIK 3K','Malaysian Mango - Blue Mint Rose - Pineapple - Passion Berry - Storm - Watermelon Ice - Triple Berry Ice - Peach Ice Blue - Razz Ice - Watermelon - Delight')">
+    <img src="img/vape14.png" alt="Vape">
+    <h3>FUNKI REPUBLIK 3K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('CHRIS BROWN 15K','Blue Razz - Apple Gummies - Pineapple - Lemonade - Passion Fruit - Pineapple Cherry - Cola Sour Apple - Raspberry - Strawberry Kiwi - Grape Razz - Strawberry - Banana')">
+    <img src="img/vape15.png" alt="Vape">
+    <h3>CHRIS BROWN 15K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('V-PLAY 20K','BlueRazz Bash - Vegas Delight - Power Up - Black Mamba - Minty Thrill - WTF - Berry Rush - Merry Berry - Sucker Punch - Strawberry Fun-Ta - Stramo - Grape Escape - Blueberry Grapefruit - Watermelon Breeze - Strawberry Blowpop - Yummy Gummy')">
+    <img src="img/vape16.png" alt="Vape">
+    <h3>V-PLAY 20K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('ORION BAR 7.5K','Blueberry Raspberry - Blue Cotton Candy - Sour Apple Ice - Strawberry Watermelon - Summer Berry Ice - Rainbow Drop - Juicy Peach - Green Storm - Green Apple Pop - Pineapple Peach - Cush Ice - Strawberry Kiwi - Triple Berries - POP Café Mocha - Strawberry Banana - Pineapple Lemonade - Chilly Spring')">
+    <img src="img/vape17.png" alt="Vape">
+    <h3>ORION BAR 7.5K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('SOLARIS 25K','Cherry Boom - Polar Mint - Banana Coconut - Mango Dragon Fruit - Lemonade - Blue Slurpie - Sour Apple - Watermelon Chill - Mango Colada - Strawberry Watermelon - Watermelon Bubble Gum - Pineapple Passion')">
+    <img src="img/vape18.png" alt="Vape">
+    <h3>SOLARIS 25K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('TESLA 18K','Blue Razz - Summer Love - Lost Cherry - Blueberry Watermelon - Confusión - Strawberry Watermelon - Black Dragon - Puré - Stranana - Watermelon Ice - Miami Mint - Juicy Mango - Raspberry Coconut - Red Bomb - Strawlands')">
+    <img src="img/vape19.png" alt="Vape">
+    <h3>TESLA 18K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('HUMO AZUL 8K','Strawberry Peach - Blueberry Azul Ice - Frozen Grape Azul - Azul Melón Ice - Frozen Lush Azul - Frozen Banana Azul')">
+    <img src="img/vape20.png" alt="Vape">
+    <h3>HUMO AZUL 8K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('POLKADOT 20K','Nectarine Nashi - Sour Apple Razz - Melón Colada')">
+    <img src="img/vape21.png" alt="Vape">
+    <h3>POLKADOT 20K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('BUGATTI 7K','Strawberry Piña Colada - Cool Mint - Menthol Ice - Tropical Mango - Frozen Pineapple - Double Mint - Orange Crush - Blue Gummi - Pink Lemone - Grape Crush')">
+    <img src="img/vape22.png" alt="Vape">
+    <h3>BUGATTI 7K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('TYSON ROUND 1','Orange Soda - Coconut - Strawberry Shortcake - Lush Lime - Pineapple Kiwi - Berry - Apple Melón')">
+    <img src="img/vape23.png" alt="Vape">
+    <h3>TYSON ROUND 1</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('TYSON ROUND 2','Seven Up - Dragon Berry - Mango Lichi - Watermelon - Bubble Gum - Lush Lime - Orange Soda - Desert Punch - Clear - Apple Melón - Berry')">
+    <img src="img/vape24.png" alt="Vape">
+    <h3>TYSON ROUND 2</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('MX AIR 5K','Summer Fruit - Mango Freeze - Black Sakura - Lush Ice - Strawberry Sky - Strawberry Freeze - Sour Peach')">
+    <img src="img/vape25.png" alt="Vape">
+    <h3>MX AIR 5K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('DIITO 40K','Black Blueberry - Cherry Grape B-Pop - Watermelon Ice - Sour Apple Ice - Berry Mist - Seasalt Lemon - Scoop - Miami Mint - Juicy Peach - Blue Razz - Ice Berry Mist - StrawNana')">
+    <img src="img/vape26.png" alt="Vape">
+    <h3>DIITO 40K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('ORION BAR 10K','Raspberry Sour Apple - Strawberry Chew - Kiwi Pasión - Fruit Guava - Miami Mint - Pineapple Lemone - Grape Burts - Lush Ice - Strawberry Summertime')">
+    <img src="img/vape27.png" alt="Vape">
+    <h3>ORION BAR 10K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('REABBETS 10K','Blue Razz Ice - Blueberry Cloud - Grape Ice - Miami Mint - Peach Mango - Pineapple - Strawberry Banana - Strawberry Ice - Strawberry Kiwice - Watermelon Ice - Mango Madness - Raspberry Pomegranate - Kiwi Melón - Apple Yummy Strazz - Cherry Lemon - Honeydew Mango - Fuji Ice - Clear')">
+    <img src="img/vape28.png" alt="Vape">
+    <h3>REABBETS 10K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    <div class="card" onclick="openModal('MTRX 12K','Strawberry Ice - Lime Dew - Grape Lemon - Cherry Straz - Mango Peach - Watermelon - Dragon')">
+    <img src="img/vape29.png" alt="Vape">
+    <h3>MTRX 12K</h3>
+    <p>Diseño compacto y moderno.</p>
+</div>
+
+    </section>
+
+</main>
+
+<!-- MODAL PRODUCTO -->
+<div class="product-overlay" id="productOverlay">
+    <div class="product-box">
+    <h3 id="productTitle"></h3>
+    <p><strong>Sabores disponibles:</strong></p>
+    <p id="productFlavors"></p>
+    <button onclick="closeModal()">Cerrar</button>
+    </div>
+</div>
+
+
+<footer>
+    <p>Producto exclusivo para mayores de 18 años. Sitio informativo. No se realizan ventas en línea.</p>
+    <p>Las marcas mostradas pertenecen a sus respectivos dueños.</p>
+</footer>
+
+<script>
+    function acceptAge() {
+    document.getElementById('ageOverlay').style.display = 'none';
+    }
+
+    function openModal(title, flavors) {
+    document.getElementById('productTitle').innerText = title;
+    document.getElementById('productFlavors').innerText = flavors;
+    document.getElementById('productOverlay').style.display = 'flex';
+    }
+
+    function closeModal() {
+    document.getElementById('productOverlay').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
